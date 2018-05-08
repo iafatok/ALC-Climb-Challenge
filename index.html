@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ALC-Take-a-Climb</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="top">
+        <h1>Take a Climb Challenge</h1>
+    </div>
+    <form id="adrress_form">
+        <label for="contact_name">Name</label>
+        <input type="text" id="name" name="contact_name" required><br />
+
+        <label for="contact_phone">Phone</label>
+        <input type="tel" id="phone" name="contact_phone" required><br />
+
+        <label for="contact_email">Email</label>
+        <input type="email" id="email" name="contact_email" required><br />
+
+        <input type="submit" value="Save">
+    </form>
+    <div>
+        <div class="row">
+                <div id="addressBook"></div>
+        </div>
+    </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Edit Contact</h2>
+        </div>
+        <div class="modal-body">
+            <form id="edit_form">
+                <label for="edit_name">Name</label>
+                <input type="text" id="edit_name" name="edit_name" required>
+            
+                <label for="edit_email">Email</label>
+                <input type="email" id="edit_email" name="edit_email" required>
+            
+                <label for="edit_phone">Phone</label>
+                <input type="tel" id="edit_phone" name="edit_phone" required>
+                <input type="submit" value="Save">
+            </form>
+        </div>
+        <div class="modal-footer">
+            <h3>&copy; Akanbi Lawal</h3>
+        </div>
+    </div>
+
+</div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
